@@ -41,13 +41,13 @@ The package was scanned for CJK Unified Ideographs. No Chinese characters were f
 `architecture-collaboration/SKILL.md`:
 
 ```text
-Lines: 92
-Characters: 3521
-Words: 445
-Approximate tokens: 881
+Lines: 94
+Characters: 4027
+Words: 512
+Approximate tokens: 1007
 ```
 
-The previous draft was approximately 1515 tokens. The current version is significantly smaller while preserving the workflow rules, trigger phrases, project structure, decision gate, and session close behavior.
+The first long draft was approximately 1515 tokens. The current version remains smaller while adding broader invocation coverage for project memory, core architecture, checkpoints, snapshots, reviews, ADRs, changelogs, and cross-session continuity.
 
 ### Repository Layout
 
@@ -78,6 +78,9 @@ Use exact trigger commands for the most reliable behavior:
 ```text
 arch start: {project name}
 arch continue: {project name or project path}
+arch update: {change}
+arch review: {project name or project path}
+arch checkpoint
 arch decision: {decision question}
 arch summary
 ```

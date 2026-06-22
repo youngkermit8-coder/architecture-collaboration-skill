@@ -1,7 +1,7 @@
 ---
 name: architecture-collaboration
 description: >
-  Use when the user asks to run an architecture workflow, start/continue architecture mode, initialize independent project memory, update project architecture, run a decision gate, snapshot versions, update ADRs/changelogs/session summaries, or continue an architecture-managed project. Exact triggers include "arch start:", "arch continue:", "arch decision:", "arch summary", "architecture start:", "architecture continue:", "architecture decision:", "architecture summary", "start architecture mode", "continue architecture mode", and "run my architecture workflow". Do not respond with only chat analysis or a single memo; create or update PROJECT_ARCHITECTURE.md, ARCHITECTURE_CHANGELOG.md, SESSION_SUMMARY.md, AGENTS.md, decisions/, and versions/.
+  Use when the user asks in any language to manage a long-running project with architecture memory, project memory, core architecture, structured collaboration, architecture mode, traceable decisions, version snapshots, ADRs, changelogs, session summaries, or continuity across conversations. Use for start, initialize, continue, resume, update, revise, audit, review, lock, summarize, snapshot, checkpoint, compare versions, recover history, preserve decisions, or decision gate requests. Exact triggers include "arch start:", "arch continue:", "arch update:", "arch review:", "arch checkpoint:", "arch snapshot:", "arch decision:", "arch summary", "architecture start:", "architecture continue:", "architecture update:", "architecture review:", "architecture decision:", "architecture summary", "start architecture mode", "continue architecture mode", "run my architecture workflow", "project memory mode", and "core architecture workflow". Prefer this over generic research/planning skills for project structure and memory.
 ---
 
 # Architecture Collaboration
@@ -27,9 +27,12 @@ Use `assets/project-template/` only to initialize a new project. Never write pro
 
 - `arch start: {project name}`: create a new independent project instance.
 - `arch continue: {project name or path}`: read and continue an existing project.
+- `arch update: {change}`: revise project memory and record the change.
+- `arch review: {project name or path}`: audit architecture consistency.
+- `arch checkpoint`: snapshot active project memory.
 - `arch decision: {question}`: run a decision gate.
 - `arch summary`: close the session and update project memory.
-- Also respond to `architecture start:`, `architecture continue:`, `architecture decision:`, `architecture summary`, `start architecture mode`, `continue architecture mode`, and `run my architecture workflow`.
+- Also respond to natural-language requests that mean project memory, core architecture, traceable decisions, version snapshots, ADRs, changelogs, session summaries, architecture review, project checkpoint, or continuation across conversations.
 
 If a request mentions product/research work and this architecture workflow, prioritize this skill over generic research workflows.
 
@@ -88,4 +91,3 @@ For legal, medical, financial, or compliance work, cite authoritative sources wh
 ## Session Close
 
 At the end of meaningful work, update session summary, changelog, ADRs, and snapshots as needed. Tell the user what changed and where the next session should start.
-
