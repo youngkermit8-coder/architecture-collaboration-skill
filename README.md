@@ -14,6 +14,22 @@ This skill gives Codex a lightweight operating system for long-running work: one
 - Preserve decision history before changing direction.
 - Separate reusable workflow rules from project-specific content.
 
+## Who It Is For
+
+Use this if you build with AI coding agents and your projects are too long to fit cleanly in one conversation.
+
+It is especially useful for:
+
+- founders turning messy ideas into product systems
+- solo builders running several projects at once
+- AI-assisted teams that need decision traceability
+- researchers who want architecture, notes, and changes to stay connected
+- consultants or operators who revisit client projects across many sessions
+
+## The Problem It Solves
+
+AI agents are great at moving fast, but long projects need memory discipline. Without a shared project structure, each session can slowly drift away from the original architecture. This skill gives Codex a repeatable ritual: read the current architecture, make changes intentionally, snapshot versions, record decisions, and leave the next session a clean handoff.
+
 ## Quick Start
 
 ```bash
