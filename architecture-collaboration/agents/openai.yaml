@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Collaboration"
+  short_description: "Reusable project memory flow"
+  default_prompt: "Use my architecture collaboration workflow to initialize or continue a project."
